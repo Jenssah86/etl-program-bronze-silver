@@ -1,4 +1,4 @@
-Python ETL program
+Python ETL program (bronze - silver)
 
 In dit project maken we een programmatje in Python welke een ETL proces uitvoert voor specifieke CSV-bestanden van een dataset van een bedrijf. 
 Het moet de data opschonen/transformeren en vervolgens wegschrijven naar mySQL-server (XAMPP, lokaal)
