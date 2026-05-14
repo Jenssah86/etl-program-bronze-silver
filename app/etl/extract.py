@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = "../../bronze/superstore_batch_1.csv" # nu tijdelijk voor testen, gaat later via UI binnenkomen
+file_path = "../../bronze/superstore_batch_1.csv" # tijdelijk voor testen, gaat later via UI binnenkomen
 
 def read_csv(file_path):
     """Reads a CSV file and returns a DataFrame."""
@@ -17,9 +17,5 @@ def read_csv(file_path):
 
         return None
 
-print("Extract module loaded successfully.")
-
-df = read_csv(file_path)
-
-if df is not None:
-    print(df.head())
+        print("Extract module loaded successfully.")
+    

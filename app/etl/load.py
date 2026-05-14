@@ -1,8 +1,17 @@
-def load_to_mysql(df, table_name, engine):
-    df.to_sql(
-        table_name,
-        con=engine,
-        if_exists="replace",
-        index=False
-    )
-    print(f"Data loaded to MySQL table '{table_name}' successfully.")
+import logging
+
+def load_to_mysql(df, engine):
+    try:
+        logging.info("Loading data into silver_orders")
+
+        df.to_sql(
+            "silver_orders",
+            con=engine,
+            if_exists="append",
+            index=False
+        )
+
+        logging.info(f"{len(df)} records loaded into silver_orders")
+
+    except Exception as e:
+        logging.error(f"Load failed: {e}")
