@@ -1,7 +1,5 @@
 import pandas as pd  # pandas wordt gebruikt voor het inlezen en verwerken van CSV-data
 
-file_path = "../../bronze/superstore_batch_1.csv"  # tijdelijke testpad (later vervangen door UI input)
-
 def read_csv(file_path):
     """Reads a CSV file and returns a DataFrame."""
 
