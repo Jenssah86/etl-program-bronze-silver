@@ -1,10 +1,10 @@
-# **Bronze → Silver ETL Tool**
+# **Bronze → Silver ETL program**
 
 
 
 
 
-!\[afbeelding](./image/1.png)
+!\[etl\_tool](./image/1.png)
 
 
 
@@ -132,18 +132,4 @@ pyinstaller --onefile --windowed --clean --name etl\_bronze\_silver\_v1 --icon a
 **│ Incremental Loading**          │
 
 └──────────────────────┘
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
