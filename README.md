@@ -1,12 +1,7 @@
 # **Bronze → Silver ETL program**
 
 
-
-
-
-!\[etl\_tool](./image/1.png)
-
-
+![etl_tool](./image/tool.png)
 
 
 
