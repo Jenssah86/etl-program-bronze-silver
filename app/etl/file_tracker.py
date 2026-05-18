@@ -1,6 +1,6 @@
 from sqlalchemy import text
 
-
+# controleren of input bestand al eerder verwerkt is
 def is_file_processed(engine, file_name):
 
     # Open database connectie
@@ -19,7 +19,7 @@ def is_file_processed(engine, file_name):
 
     return result > 0
 
-
+# markeert het input bestand als verwerkt
 def mark_file_processed(engine, file_name):
 
     # Open database transactie

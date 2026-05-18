@@ -1,5 +1,5 @@
 import logging
 
-# Dit bestand configureert GEEN logging meer.
+# Dit bestand configureert GEEN logging dat gebeurd in main_window.py.
 # Het zorgt er alleen voor dat ETL-modules logging kunnen gebruiken.
 logger = logging.getLogger(__name__)
