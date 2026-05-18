@@ -2,6 +2,7 @@
 
 
 ![etl_tool](./image/tool.png)
+![etl_tool](./image/flow.png)
 
 
 
