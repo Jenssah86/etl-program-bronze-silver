@@ -17,7 +17,7 @@ def is_file_processed(engine, file_name):
             {"f": file_name}
         ).scalar()
 
-    return result > 0
+    return result > 0 # Geeft een TRUE of FALSE waarde
 
 # markeert het input bestand als verwerkt
 def mark_file_processed(engine, file_name):

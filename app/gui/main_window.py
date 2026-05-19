@@ -202,7 +202,7 @@ def run_app():
     select_button = tk.Button(
         root,
         text="Upload CSV-bestand",
-        command=select_file,
+        command=select_file, # hierdoor start de functie select_file()
         width=20,
         height=2
     )
@@ -214,7 +214,7 @@ def run_app():
     run_button = tk.Button(
         root,
         text="Draai ETL proces",
-        command=start_etl,
+        command=start_etl, # hierdoor start de functie start_etl()
         width=20,
         height=2
     )
