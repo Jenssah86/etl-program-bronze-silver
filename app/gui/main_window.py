@@ -105,7 +105,7 @@ def write_log(message):
 #  BESTAND SELECTEREN
 # ============================================================
 def select_file():
-    global selected_file
+    global selected_file # globale variabele
 
     # Open file dialog voor CSV selectie
     file_path = filedialog.askopenfilename(

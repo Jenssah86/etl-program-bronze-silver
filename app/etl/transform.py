@@ -23,30 +23,26 @@ def transform_data(df):
 
         # WARNINGS BEFORE TRANSFORMATION (data quality checks)
         duplicates = df.duplicated().sum()
-
         if duplicates > 0:
             logging.warning(f"{duplicates} duplicate rows detected")
 
         nulls = df.isna().sum().sum()
-
         if nulls > 0:
             logging.warning(f"{nulls} null values detected")
 
         negative_sales = (df['Sales'] < 0).sum()
+        if negative_sales > 0:
+            logging.warning(f"{negative_sales} negative sales values found")
 
         invalid_order_dates = df['Order Date'].isna().sum()  # check voor invalid datums vóór cleaning
-
         if invalid_order_dates > 0:
             logging.warning(f"{invalid_order_dates} invalid order dates found")
 
         invalid_ship_dates = df['Ship Date'].isna().sum()  # check voor invalid ship dates vóór cleaning
-
         if invalid_ship_dates > 0:
             logging.warning(f"{invalid_ship_dates} invalid ship dates found")
 
-        if negative_sales > 0:
-            logging.warning(f"{negative_sales} negative sales values found")
-
+        
         # TRANSFORMATION STEP (data cleaning + standaardisatie)
 
         df = df.drop_duplicates()  # verwijdert dubbele rijen
